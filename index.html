@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BENEFIT - Строительная компания в Нюрнберге</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome для иконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Эффект шариков (Canvas) -->
+    <canvas id="bgCanvas"></canvas>
+
+    <!-- Верхняя панель (Header) -->
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo-area">
+                <img src="logo.jpg" alt="BENEFIT" class="header-logo">
+                <span class="company-name">BENEFIT</span>
+            </div>
+            <div class="header-right">
+                <a href="tel:+380964500350" class="header-phone">
+                    <i class="fas fa-phone-alt"></i> +380 96 450 0350
+                </a>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#jobs">Работа</a></li>
+                        <li><a href="#projects">Проекты</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <div class="content">
+        
+        <!-- 1. Первый экран (Главный баннер) -->
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1 class="hero-title">СТРОИТЕЛЬНАЯ КОМПАНИЯ BENEFIT</h1>
+                <p class="hero-subtitle">Найдем работу для специалистов в Германии</p>
+                <a href="https://t.me/workisb_bot" target="_blank" class="btn btn-primary">ЗАПОЛНИТЬ АНКЕТУ</a>
+            </div>
+        </section>
+
+        <!-- 2. Блок О НАС -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">КТО МЫ ТАКИЕ</h2>
+                <div class="about-content">
+                    <p class="about-text">BENEFIT — строительная компания в Нюрнберге (Германия). С 2018 года мы помогаем специалистам найти работу в строительной сфере. Сотрудничаем с проверенными подрядчиками и стройками по всей Германии.</p>
+                </div>
+                
+                <div class="cards-grid">
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <i class="fas fa-helmet-safety"></i>
+                        </div>
+                        <h3>Предлагаем работу специалистам</h3>
+                        <p>Разнорабочие, бетонщики, арматурщики, отделочники. Все виды внешних и внутреных работ</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <i class="fas fa-file-contract"></i>
+                        </div>
+                        <h3>Официальное трудоустройство</h3>
+                        <p> Полный пакет документов, гарантированная выплата по контракту, возможен аванс</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <h3>Работа по всей территории Германии</h3>
+                        <p>Объекты в Нюрнберге, Мюнхене, Франкфурте, Берлине. Возможность работы в вашем городе или с переездом</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Блок КАК УСТРОИТЬСЯ -->
+        <section id="jobs" class="section benefits">
+            <div class="container">
+                <h2 class="section-title">КАК УСТРОИТЬСЯ К НАМ</h2>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h3>Заполните анкету</h3>
+                        <p>Перейдите в Telegram-бота и оставьте свои данные</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h3>Мы свяжемся с вами</h3>
+                        <p>Наш менеджер обьязательно позвонит в рабочее время</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h3>Полное сопровождение</h3>
+                        <p>Помощь в поселении, доезд до обьекта, решение бытовых вопросов </p>
+                    </div>
+                </div>
+                
+                <div class="center-button">
+                    <a href="https://t.me/workisb_bot" target="_blank" class="btn btn-primary" style="font-size: 1.5rem; padding: 20px 50px;">
+                        <i class="fab fa-telegram"></i> ПЕРЕЙТИ В БОТ
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Блок проектов -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">НАШИ ПРОЕКТЫ</h2>
+                <div class="cards-grid">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Бизнес-центр">
+                        </div>
+                        <h3>Бизнес-центр</h3>
+                        <p>Нюрнберг, 2023</p>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Жилой комплекс">
+                        </div>
+                        <h3>Жилой комплекс</h3>
+                        <p>Мюнхен, 2022</p>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Промышленный объект">
+                        </div>
+                        <h3>Промышленный объект</h3>
+                        <p>Франкфурт, 2023</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Блок контактов -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <h2 class="section-title">СВЯЖИТЕСЬ С НАМИ</h2>
+                <div class="contact-grid" style="grid-template-columns: 1fr 1fr;">
+                    <!-- Контактная информация -->
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h3>Телефон</h3>
+                                <a href="tel:+380964500350">+380 96 450 0350</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <a href="mailto:benefit.t.ko@gmail.com">benefit.t.ko@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Адрес</h3>
+                                <p>Nuremberg, Germany</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h3>График работы</h3>
+                                <p>Пн - Пт: 09:00 - 16:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Блок с ботом (работает 24/7) -->
+                    <div class="bot-block">
+                        <div class="bot-card">
+                            <i class="fab fa-telegram bot-icon"></i>
+                            <h3>Свяжитесь через бота</h3>
+                            <p style="color: #0ff; font-weight: bold; font-size: 1.3rem;">⏰ Бот работает круглосуточно</p>
+                            <p>Менеджеры отвечают в рабочее время<br>Пн - Пт с 09:00 до 16:00</p>
+                            <a href="https://t.me/workisb_bot" target="_blank" class="btn btn-primary" style="margin-top: 20px;">
+                                <i class="fab fa-telegram"></i> НАПИСАТЬ В БОТА
+                            </a>
+                            <p style="margin-top: 20px; font-size: 0.9rem; color: #aaa;">
+                                Нажми на кнопку, откроется Telegram.<br>Заполните анкету и мы свяжемся с вами!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Подвал (Footer) -->
+        <footer class="main-footer">
+            <div class="container">
+                <div class="footer-content">
+                    <p>© 2018 BENEFIT. Все права защищены.</p>
+                    <div class="footer-links">
+                        <a href="#">Политика конфиденциальности</a>
+                        <a href="#">Условия использования</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
