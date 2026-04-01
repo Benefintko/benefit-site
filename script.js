@@ -76,18 +76,19 @@ window.addEventListener('resize', () => {
     canvas.width = width;
     canvas.height = height;
 });
-// ========== АНІМАЦІЯ ЛІЧИЛЬНИКІВ ==========
+
+// ========== АНИМАЦИЯ СЧЕТЧИКОВ ==========
 const counters = document.querySelectorAll('.counter-number');
 
 const animateCounter = (counter) => {
     const target = parseInt(counter.getAttribute('data-count'));
     let current = 0;
-    const increment = target / 50;
+    const increment = target / 60;
     const updateCounter = () => {
         if (current < target) {
             current += increment;
-            counter.innerText = Math.ceil(current);
-            setTimeout(updateCounter, 30);
+            counter.innerText = Math.floor(current);
+            setTimeout(updateCounter, 25);
         } else {
             counter.innerText = target;
         }
@@ -95,7 +96,6 @@ const animateCounter = (counter) => {
     updateCounter();
 };
 
-// Запускаємо анімацію, коли лічильники з'являються на екрані
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
