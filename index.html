@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BENEFIT - Строительная компания в Нюрнберге</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome для иконок -->
+    <!-- Font Awesome для іконок -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- Эффект шариков (Canvas) -->
+    <!-- Ефект шариків (Canvas) -->
     <canvas id="bgCanvas"></canvas>
 
-    <!-- Верхняя панель (Header) -->
+    <!-- Верхня панель (Header) -->
     <header class="main-header">
         <div class="container header-container">
             <div class="logo-area">
@@ -24,84 +24,104 @@
                 <a href="tel:+380964500350" class="header-phone">
                     <i class="fas fa-phone-alt"></i> +380 96 450 0350
                 </a>
+                <a href="https://t.me/workisb_bot" target="_blank" class="header-telegram">
+                    <i class="fab fa-telegram"></i> Бот для анкети
+                </a>
                 <nav class="main-nav">
                     <ul>
-                        <li><a href="#about">О нас</a></li>
-                        <li><a href="#jobs">Работа</a></li>
-                        <li><a href="#projects">Проекты</a></li>
-                        <li><a href="#contact">Контакты</a></li>
+                        <li><a href="#about">Про нас</a></li>
+                        <li><a href="#jobs">Робота</a></li>
+                        <li><a href="#reviews">Відгуки</a></li>
+                        <li><a href="#projects">Проєкти</a></li>
+                        <li><a href="#contact">Контакти</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
 
-    <!-- Основной контент -->
+    <!-- Основний контент -->
     <div class="content">
         
-        <!-- 1. Первый экран (Главный баннер) -->
+        <!-- 1. Перший екран (Головний банер) -->
         <section class="hero">
             <div class="hero-overlay"></div>
             <div class="container hero-content">
-                <h1 class="hero-title">СТРОИТЕЛЬНАЯ КОМПАНИЯ BENEFIT</h1>
-                <p class="hero-subtitle">Найдем работу для специалистов в Германии</p>
-                <a href="https://t.me/workisb_bot" target="_blank" class="btn btn-primary">ЗАПОЛНИТЬ АНКЕТУ</a>
+                <h1 class="hero-title">БУДІВЕЛЬНА КОМПАНІЯ BENEFIT</h1>
+                <p class="hero-subtitle">Знайдемо роботу для спеціалістів у Німеччині</p>
+                <a href="https://t.me/workisb_bot" target="_blank" class="btn btn-primary">ЗАПОВНИТИ АНКЕТУ</a>
             </div>
         </section>
 
-        <!-- 2. Блок О НАС -->
+        <!-- 2. Блок ПРО НАС + ЛІЧИЛЬНИКИ -->
         <section id="about" class="section">
             <div class="container">
-                <h2 class="section-title">КТО МЫ ТАКИЕ</h2>
+                <h2 class="section-title">ХТО МИ ТАКІ</h2>
                 <div class="about-content">
-                    <p class="about-text">BENEFIT — строительная компания в Нюрнберге (Германия). С 2018 года мы помогаем специалистам найти работу в строительной сфере. Сотрудничаем с проверенными подрядчиками и стройками по всей Германии.</p>
+                    <p class="about-text">BENEFIT — будівельна компанія в Нюрнберзі (Німеччина). З 2018 року ми допомагаємо спеціалістам знайти роботу в будівельній сфері. Співпрацюємо з перевіреними підрядниками та будівництвами по всій Німеччині.</p>
                 </div>
                 
+                <!-- Лічильники -->
+                <div class="counters-grid">
+                    <div class="counter-card">
+                        <div class="counter-number" data-count="7">0</div>
+                        <div class="counter-label">років на ринку</div>
+                    </div>
+                    <div class="counter-card">
+                        <div class="counter-number" data-count="350">0</div>
+                        <div class="counter-label">працевлаштовано</div>
+                    </div>
+                    <div class="counter-card">
+                        <div class="counter-number" data-count="100">0</div>
+                        <div class="counter-label">об'єктів</div>
+                    </div>
+                </div>
+
                 <div class="cards-grid">
                     <div class="service-card">
                         <div class="card-icon">
                             <i class="fas fa-helmet-safety"></i>
                         </div>
-                        <h3>Предлагаем работу специалистам</h3>
-                        <p>Разнорабочие, бетонщики, арматурщики, отделочники. Все виды внешних и внутреных работ</p>
+                        <h3>Шукаємо людей на роботу - пропонуємо роботу</h3>
+                        <p>Різноробочі, бетонники, арматурники, оздоблювальники і т.д.</p>
                     </div>
                     <div class="service-card">
                         <div class="card-icon">
                             <i class="fas fa-file-contract"></i>
                         </div>
-                        <h3>Официальное трудоустройство</h3>
-                        <p> Полный пакет документов, гарантированная выплата по контракту, возможен аванс</p>
+                        <h3>Офіційне працевлаштування</h3>
+                        <p>Оформлення повного пакету документів, офіційна зарплата, гарантована виплата по контракту, виплата авансу</p>
                     </div>
                     <div class="service-card">
                         <div class="card-icon">
                             <i class="fas fa-map-marked-alt"></i>
                         </div>
-                        <h3>Работа по всей территории Германии</h3>
-                        <p>Объекты в Нюрнберге, Мюнхене, Франкфурте, Берлине. Возможность работы в вашем городе или с переездом</p>
+                        <h3>Робота по всій Німеччині</h3>
+                        <p>Об'єкти в Нюрнберзі, Мюнхені, Франкфурті і т.д.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 3. Блок КАК УСТРОИТЬСЯ -->
+        <!-- 3. Блок ЯК ВЛАШТУВАТИСЯ -->
         <section id="jobs" class="section benefits">
             <div class="container">
-                <h2 class="section-title">КАК УСТРОИТЬСЯ К НАМ</h2>
+                <h2 class="section-title">ЯК ВЛАШТУВАТИСЯ ДО НАС</h2>
                 <div class="steps-grid">
                     <div class="step-card">
                         <div class="step-number">1</div>
-                        <h3>Заполните анкету</h3>
-                        <p>Перейдите в Telegram-бота и оставьте свои данные</p>
+                        <h3>Заповни анкету</h3>
+                        <p>Перейди в Telegram-бота і залиш свої дані</p>
                     </div>
                     <div class="step-card">
                         <div class="step-number">2</div>
-                        <h3>Мы свяжемся с вами</h3>
-                        <p>Наш менеджер обьязательно позвонит в рабочее время</p>
+                        <h3>Ми зв'яжемося з тобою</h3>
+                        <p>Наш менеджер зателефонує в робочий час</p>
                     </div>
                     <div class="step-card">
                         <div class="step-number">3</div>
-                        <h3>Полное сопровождение</h3>
-                        <p>Помощь в поселении, доезд до обьекта, решение бытовых вопросов </p>
+                        <h3>Повний супровід</h3>
+                        <p>Допомога в поселенні, оформлення документів, офіційна зарплата, аванс</p>
                     </div>
                 </div>
                 
@@ -113,42 +133,119 @@
             </div>
         </section>
 
-        <!-- 4. Блок проектов -->
+        <!-- 4. Блок ВІДГУКІВ -->
+        <section id="reviews" class="section reviews-section">
+            <div class="container">
+                <h2 class="section-title">ВІДГУКИ НАШИХ ПРАЦІВНИКІВ</h2>
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="review-info">
+                                <h3>Олександр</h3>
+                                <p>Бетонник</p>
+                            </div>
+                        </div>
+                        <div class="review-text">
+                            <i class="fas fa-quote-left"></i>
+                            <p>"Жилье нормальное как у всех, вода, тепло, посуда. Хостел как хостел, все нормально. На работе тоже норм, работа есть работа, получил в этом месяце 2500€"</p>
+                        </div>
+                    </div>
+                    
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="review-info">
+                                <h3>Іван</h3>
+                                <p>Арматурник</p>
+                            </div>
+                        </div>
+                        <div class="review-text">
+                            <i class="fas fa-quote-left"></i>
+                            <p>"Жилье предоставили сразу, все чисто, есть кухня. С координатором на связи постоянно, если вопросы — решают быстро. Зарплата вовремя, без задержек. Спасибо команде BENEFIT!"</p>
+                        </div>
+                    </div>
+                    
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="review-info">
+                                <h3>Сергій</h3>
+                                <p>Різноробочий</p>
+                            </div>
+                        </div>
+                        <div class="review-text">
+                            <i class="fas fa-quote-left"></i>
+                            <p>"Добрый вечер Анастасия. Мы сейчас отдыхаем. Жилье проблем не было, мы с координатором на связи. Спасибо за связь)"</p>
+                        </div>
+                    </div>
+                    
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="review-info">
+                                <h3>Михайло</h3>
+                                <p>Монтажник</p>
+                            </div>
+                        </div>
+                        <div class="review-text">
+                            <i class="fas fa-quote-left"></i>
+                            <p>"Уже 2 роки працюю через BENEFIT. Об'єкти різні, але умови скрізь хороші. Житло завжди є, зарплата стабільно. Раджу тим, хто шукає роботу в Німеччині."</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="center-button">
+                    <a href="https://t.me/vidhykbenefit" target="_blank" class="btn btn-secondary">
+                        <i class="fab fa-telegram"></i> ВСІ ВІДГУКИ В TELEGRAM
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Блок ПРОЄКТІВ -->
         <section id="projects" class="section">
             <div class="container">
-                <h2 class="section-title">НАШИ ПРОЕКТЫ</h2>
+                <h2 class="section-title">НАШІ ПРОЄКТИ</h2>
                 <div class="cards-grid">
                     <div class="project-card">
                         <div class="project-img">
-                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Бизнес-центр">
+                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Бізнес-центр">
                         </div>
-                        <h3>Бизнес-центр</h3>
+                        <h3>Бізнес-центр</h3>
                         <p>Нюрнберг, 2023</p>
                     </div>
                     <div class="project-card">
                         <div class="project-img">
-                            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Жилой комплекс">
+                            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Житловий комплекс">
                         </div>
-                        <h3>Жилой комплекс</h3>
+                        <h3>Житловий комплекс</h3>
                         <p>Мюнхен, 2022</p>
                     </div>
                     <div class="project-card">
                         <div class="project-img">
-                            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Промышленный объект">
+                            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Промисловий об'єкт">
                         </div>
-                        <h3>Промышленный объект</h3>
+                        <h3>Промисловий об'єкт</h3>
                         <p>Франкфурт, 2023</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 5. Блок контактов -->
+        <!-- 6. Блок КОНТАКТІВ -->
         <section id="contact" class="section contact-section">
             <div class="container">
-                <h2 class="section-title">СВЯЖИТЕСЬ С НАМИ</h2>
+                <h2 class="section-title">ЗВ'ЯЖІТЬСЯ З НАМИ</h2>
                 <div class="contact-grid" style="grid-template-columns: 1fr 1fr;">
-                    <!-- Контактная информация -->
                     <div class="contact-info">
                         <div class="contact-item">
                             <i class="fas fa-phone-alt"></i>
@@ -167,31 +264,30 @@
                         <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
                             <div>
-                                <h3>Адрес</h3>
+                                <h3>Адреса</h3>
                                 <p>Nuremberg, Germany</p>
                             </div>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-clock"></i>
                             <div>
-                                <h3>График работы</h3>
+                                <h3>Графік роботи</h3>
                                 <p>Пн - Пт: 09:00 - 16:00</p>
                             </div>
                         </div>
                     </div>
                     
-                    <!-- Блок с ботом (работает 24/7) -->
                     <div class="bot-block">
                         <div class="bot-card">
                             <i class="fab fa-telegram bot-icon"></i>
-                            <h3>Свяжитесь через бота</h3>
-                            <p style="color: #0ff; font-weight: bold; font-size: 1.3rem;">⏰ Бот работает круглосуточно</p>
-                            <p>Менеджеры отвечают в рабочее время<br>Пн - Пт с 09:00 до 16:00</p>
+                            <h3>Зв'яжись через бота</h3>
+                            <p style="color: #0ff; font-weight: bold; font-size: 1.3rem;">⏰ Бот працює цілодобово</p>
+                            <p>Менеджери відповідають у робочий час<br>Пн - Пт з 09:00 до 16:00</p>
                             <a href="https://t.me/workisb_bot" target="_blank" class="btn btn-primary" style="margin-top: 20px;">
-                                <i class="fab fa-telegram"></i> НАПИСАТЬ В БОТА
+                                <i class="fab fa-telegram"></i> НАПИСАТИ В БОТА
                             </a>
                             <p style="margin-top: 20px; font-size: 0.9rem; color: #aaa;">
-                                Нажми на кнопку, откроется Telegram.<br>Заполните анкету и мы свяжемся с вами!
+                                Натисни на кнопку, відкриється Telegram.<br>Заповни анкету і ми зв'яжемося з тобою!
                             </p>
                         </div>
                     </div>
@@ -199,14 +295,14 @@
             </div>
         </section>
 
-        <!-- Подвал (Footer) -->
+        <!-- Підвал (Footer) -->
         <footer class="main-footer">
             <div class="container">
                 <div class="footer-content">
-                    <p>© 2018 BENEFIT. Все права защищены.</p>
+                    <p>© 2018 BENEFIT. Всі права захищені.</p>
                     <div class="footer-links">
-                        <a href="#">Политика конфиденциальности</a>
-                        <a href="#">Условия использования</a>
+                        <a href="#">Політика конфіденційності</a>
+                        <a href="#">Умови використання</a>
                     </div>
                 </div>
             </div>
