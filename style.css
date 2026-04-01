@@ -546,3 +546,151 @@ body {
         justify-content: center;
     }
 }
+/* ========== НОВІ СТИЛІ ========== */
+
+/* Іконка Telegram у хедері */
+.header-telegram {
+    color: #0ff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(0, 255, 255, 0.1);
+    padding: 8px 16px;
+    border-radius: 30px;
+    border: 1px solid #0ff;
+    transition: all 0.3s;
+}
+
+.header-telegram:hover {
+    background: #0ff;
+    color: #0a1f2e;
+    transform: translateY(-2px);
+}
+
+/* Лічильники */
+.counters-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 60px 0 40px;
+}
+
+.counter-card {
+    text-align: center;
+    padding: 30px;
+    background: rgba(0, 50, 60, 0.5);
+    border-radius: 20px;
+    border: 1px solid #00a896;
+    transition: transform 0.3s;
+}
+
+.counter-card:hover {
+    transform: translateY(-5px);
+    border-color: #0ff;
+}
+
+.counter-number {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #0ff;
+    text-shadow: 0 0 20px cyan;
+}
+
+.counter-label {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-top: 10px;
+}
+
+/* Відгуки */
+.reviews-section {
+    background: rgba(5, 25, 35, 0.85);
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.review-card {
+    background: rgba(0, 40, 50, 0.6);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    padding: 25px;
+    border: 1px solid #008080;
+    transition: all 0.3s;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    border-color: #0ff;
+    box-shadow: 0 10px 30px rgba(0, 255, 255, 0.2);
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.review-avatar i {
+    font-size: 3rem;
+    color: #0ff;
+}
+
+.review-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.review-info p {
+    color: #0ff;
+    font-size: 0.9rem;
+}
+
+.review-text {
+    position: relative;
+}
+
+.review-text i {
+    color: #0ff;
+    opacity: 0.5;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    float: left;
+}
+
+.review-text p {
+    color: #ddd;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+/* Адаптивність для нових блоків */
+@media (max-width: 768px) {
+    .counters-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .header-right {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .header-telegram {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+}
